@@ -53,15 +53,11 @@ blood-sugar-tracker/
 
 ### 🏠 Home Page
 
-The main interface of the Blood Sugar Tracker.
-
 ![Home Page](./screenshots/home-page.png)
 
 ---
 
 ### 📅 Date Selection
-
-Select the date before entering blood sugar readings.
 
 ![Date Selection](./screenshots/date-selection.png)
 
@@ -69,15 +65,11 @@ Select the date before entering blood sugar readings.
 
 ### 📝 Entering Values
 
-Enter blood sugar readings before and after meals.
-
 ![Entering Values](./screenshots/entering-values.png)
 
 ---
 
 ### 📊 Values Displayed
-
-Saved blood sugar readings are displayed in a color-coded table for easy monitoring.
 
 ![Values Displayed](./screenshots/values-displayed.png)
 
@@ -86,6 +78,7 @@ Saved blood sugar readings are displayed in a color-coded table for easy monitor
 ## 🚀 How to Run
 
 1. Install Python.
+
 2. Install the required packages:
 
 ```bash

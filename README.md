@@ -10,7 +10,7 @@ A simple web application built using **Python, Flask, HTML, CSS, and Pandas** to
 - 🍳 Before & After Breakfast readings
 - 🍛 Before & After Lunch readings
 - 🌙 Before & After Dinner readings
-- 🎨 Color-coded blood sugar levels
+- 🎨 Color-coded blood sugar level indicators
   - 🟢 Normal
   - 🟠 High
   - 🔴 Very High
@@ -31,7 +31,7 @@ A simple web application built using **Python, Flask, HTML, CSS, and Pandas** to
 
 ## 📂 Project Structure
 
-```
+```text
 blood-sugar-tracker/
 │── app.py
 │── data.csv
@@ -55,7 +55,7 @@ blood-sugar-tracker/
 
 The main interface of the Blood Sugar Tracker.
 
-![Home Page](screenshots/home-page.png)
+![Home Page](./screenshots/home-page.png)
 
 ---
 
@@ -63,7 +63,7 @@ The main interface of the Blood Sugar Tracker.
 
 Select the date before entering blood sugar readings.
 
-![Date Selection](screenshots/date-selection.png)
+![Date Selection](./screenshots/date-selection.png)
 
 ---
 
@@ -71,22 +71,22 @@ Select the date before entering blood sugar readings.
 
 Enter blood sugar readings before and after meals.
 
-![Entering Values](screenshots/entering-values.png)
+![Entering Blood Sugar Values](./screenshots/entering-values.png)
 
 ---
 
 ### 📊 Saved Records
 
-View all saved records in a color-coded table for quick identification of blood sugar levels.
+View all saved records in a color-coded table.
 
-![Saved Records](screenshots/saved-records.png)
+![Saved Records](./screenshots/saved-records.png)
 
 ---
 
 ## 🚀 How to Run
 
 1. Install Python.
-2. Install the required libraries:
+2. Install the required packages:
 
 ```bash
 pip install flask pandas
@@ -119,7 +119,7 @@ http://127.0.0.1:5000
 
 ## 👩‍💻 Author
 
-**Kshama Kulakarni**
+**Kshama Kulkarni**
 
 First-Year Computer Science Engineering Student
 

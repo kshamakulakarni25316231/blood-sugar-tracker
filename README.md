@@ -67,17 +67,17 @@ Select the date before entering blood sugar readings.
 
 ---
 
-### 📝 Entering Blood Sugar Values
+### 📝 Entering Values
 
 Enter blood sugar readings before and after meals.
 
-![Entering Blood Sugar Values](./screenshots/**YOUR-EXACT-FILENAME-HERE**.png)
+![Entering Values](./screenshots/entering-values.png)
 
 ---
 
 ### 📊 Values Displayed
 
-All saved blood sugar readings are displayed in a color-coded table for easy monitoring.
+Saved blood sugar readings are displayed in a color-coded table for easy monitoring.
 
 ![Values Displayed](./screenshots/values-displayed.png)
 

@@ -41,7 +41,7 @@ blood-sugar-tracker/
 │     ├── home-page.png
 │     ├── date-selection.png
 │     ├── entering-values.png
-│     └── saved-records.png
+│     └── values-displayed.png
 │── README.md
 │── LICENSE
 └── .gitignore
@@ -71,15 +71,15 @@ Select the date before entering blood sugar readings.
 
 Enter blood sugar readings before and after meals.
 
-![Entering Blood Sugar Values](./screenshots/entering-values.png)
+![Entering Blood Sugar Values](./screenshots/**YOUR-EXACT-FILENAME-HERE**.png)
 
 ---
 
-### 📊 Saved Records
+### 📊 Values Displayed
 
-View all saved records in a color-coded table.
+All saved blood sugar readings are displayed in a color-coded table for easy monitoring.
 
-![Saved Records](./screenshots/saved-records.png)
+![Values Displayed](./screenshots/values-displayed.png)
 
 ---
 

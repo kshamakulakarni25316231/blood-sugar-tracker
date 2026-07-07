@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Blood Sugar Tracker</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    background:#f4f6f8;
+    text-align:center;
+}
+
+.container{
+    width:500px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input{
+    width:90%;
+    padding:10px;
+    margin:6px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:#4CAF50;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#45a049;
+}
+
+.clear-btn{
+    background:#d9534f;
+}
+
+.clear-btn:hover{
+    background:#c9302c;
+}
+
+table{
+    margin:auto;
+    margin-top:30px;
+    border-collapse:collapse;
+    background:white;
+}
+
+th,td{
+    padding:10px 15px;
+    border:1px solid #ddd;
+}
+
+th{
+    background:#4CAF50;
+    color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Blood Sugar Tracker</h2>
+
+<form method="POST">
+
+<input type="date" name="date" required><br>
+
+<input type="number" name="before_breakfast" placeholder="Before Breakfast"><br>
+
+<input type="number" name="after_breakfast" placeholder="After Breakfast"><br>
+
+<input type="number" name="before_lunch" placeholder="Before Lunch"><br>
+
+<input type="number" name="after_lunch" placeholder="After Lunch"><br>
+
+<input type="number" name="before_dinner" placeholder="Before Dinner"><br>
+
+<input type="number" name="after_dinner" placeholder="After Dinner"><br>
+
+<br>
+
+<button type="submit">Save Record</button>
+
+</form>
+
+<br>
+
+<form action="/clear" method="POST"
+onsubmit="return confirm('Are you sure you want to clear all records?');">
+
+<button type="submit" class="clear-btn">
+Clear All Records
+</button>
+
+</form>
+
+</div>
+
+<h2>Saved Records</h2>
+
+<table>
+
+<tr>
+<th>Date</th>
+<th>Before Breakfast</th>
+<th>After Breakfast</th>
+<th>Before Lunch</th>
+<th>After Lunch</th>
+<th>Before Dinner</th>
+<th>After Dinner</th>
+</tr>
+
+{% for row in tables %}
+<tr>
+
+<td>{{ row[0] }}</td>
+
+{% for value in row[1:] %}
+{% set v = value|int %}
+
+{% if v > 300 %}
+<td style="color:darkred;font-weight:bold;">{{ value }}</td>
+
+{% elif v > 240 %}
+<td style="color:red;font-weight:bold;">{{ value }}</td>
+
+{% elif v > 120 %}
+<td style="color:orange;font-weight:bold;">{{ value }}</td>
+
+{% else %}
+<td style="color:green;font-weight:bold;">{{ value }}</td>
+
+{% endif %}
+
+{% endfor %}
+
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>
